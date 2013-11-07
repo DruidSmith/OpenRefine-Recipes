@@ -11,7 +11,7 @@ This is a very powerful capability, useful for retrieving data from a REST servi
 
 Basically, the process is to construct a URL that can be passed into a REST service call.  In OpenRefine, you can do this using "Edit Column" -> "Add Column by Fetching URLs"
 
-The process is straightforward, an easy way is to just concatenate the pieces you need for the URL call.  In my case, I'm going to be calling my own [facility lookup service](http://www.epa.gov/enviro/html/fii/FRS_REST_Services.html) using "City", "State" and "Name" fields from a spreadsheet, in GREL it's done with cells["ColumnName"] and other pieces needed to construct the URL in quotes concatenated via '+':
+The process is straightforward, an easy way is to just concatenate the pieces you need for the URL call.  In this example, I'm going to be calling my own [facility lookup service](http://www.epa.gov/enviro/html/fii/FRS_REST_Services.html) using "City", "State" and "Name" fields from a spreadsheet, in GREL it's done with cells["ColumnName"] and other pieces needed to construct the URL in quotes concatenated via '+':
 
 >"http://ofmpub.epa.gov/enviro/frs_rest_services.get_facilities?city_name="+cells["City"].value+"&state_abbr="+cells["State"].value+"&facility_name="+cells["Name"].value+"&output=JSON"
 
