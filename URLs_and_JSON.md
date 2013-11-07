@@ -1,11 +1,10 @@
 
-
-Retrieving and parsing JSON with OpenRefine
+Calling REST services and parsing JSON with OpenRefine
 -----------------------------
 
 **Introduction**
 
-This is part of a collection of tips, tidbits and recipes on effective use of [OpenRefine](http://openrefine.org/), formerly known as Google Refine.  It's mainly my scrapbook and collection of things learned while working with the tool.
+This is part of what will hopefully become a budding collection of tips, tidbits and recipes on effective use of [OpenRefine](http://openrefine.org/), formerly known as Google Refine.  It's mainly my scrapbook and collection of things learned while working with the tool.
 
 **Retrieving JSON with OpenRefine**
 
