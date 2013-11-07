@@ -17,7 +17,7 @@ The process is straightforward, an easy way is to just concatenate the pieces yo
 
 When first preparing the service call, you may want to first test on a small subset of the data, like 10 records to test your call logic.  You may want to keep a notepad handy on your desktop for pasting things while testing.  I use EverNote to keep code snippets and notes organized while working - your mileage may vary.
 
-Also, when setting up the calls, there is a value, "throttle delay" - this sets up a delay between calls in milliseconds.  This is for a couple of reasons- services may not respond in as timely a fashion as one might like, resulting in timeouts - also, server admins might not appreciate thousands of service calls all trying to hit a server in rapid succession (it would basically look like a Denial of Service attack).  It looks like OpenRefine wants a minimum of 1000 milliseconds (1 second) between calls.
+Also, when setting up the calls, there is a value, "throttle delay" - this sets up a delay between calls in milliseconds.  This is for a couple of reasons- services may not respond in as timely a fashion as one might like, resulting in timeouts - also, server admins might not appreciate thousands of service calls all trying to hit a server in rapid succession (it would basically look like a Denial of Service attack).  Don't be greedy, no doubt other folks also need to use the servers.  It looks like OpenRefine wants a minimum of 1000 milliseconds (1 second) between calls.  I usually set a reasonable threshold, and set it up to run overnight.
 
 In OpenRefine, it will do all of the service calls before populating and refreshing the page.  This may take some time, so bear that in mind if you have a lot of records to work with.
 
