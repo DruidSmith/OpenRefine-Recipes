@@ -84,7 +84,7 @@ yields a count of how many "FRSFacility" items there are inside Results
 
 >1
 
-Let's test that, by trying it on a bigger JSON payload
+Let's test that, by trying it on a bigger JSON payload, which contains two items:
 
 >{
 "Results":{
@@ -131,7 +131,7 @@ FRSFacility items
 
 ***Accessing items within the payload***
 
-Let's try to get at one of the items in this second payload
+Let's try to get at one specific item in this payload
 
 >value.parseJson().Results.FRSFacility
 
@@ -163,9 +163,4 @@ yields
 
 Voila.
 
-
-
-
-
-
-
+This is the basic approach that can then be used to get at JSON data and pull out values for further processing in OpenRefine.
