@@ -54,11 +54,11 @@ The top level is Results, within that, there is FRSFacility, which in turn conta
 
 ***Deconstructing a JSON payload***
 
-Let's deconstruct.  First concept:  Use the parseJson function.
+Let's deconstruct.  First concept:  Use the parseJson() function.
 
 >value.parseJson() 
 
-will turn it into an object that OpenRefine can manipulate canonically.  It returns
+will turn the JSON (value) into an object that OpenRefine can manipulate canonically.  It returns
 
 >{"Results":{"FRSFacility":[{"CityName":"RICHMOND","Latitude83":"37.45093","LocationAddress":"5401 JEFFERSON DAVIS HWY","Longitude83":"-77.43415","RegistryId":"110000868918","CountyName":"CHESTERFIELD","FacilityName":"DUPONT SPRUANCE PLANT","ZipCode":"23234-2257","SupplementalLocation":null,"FIPSCode":"51041","StateAbbr":"VA"}]}}
 
@@ -68,7 +68,7 @@ Let's go a level deeper.
 
 >value.parseJson().Results
 
-will unwrap the "Results" package, yielding
+will unwrap the "Results" package, returning its contents:
 
 >{"FRSFacility":[{"CityName":"RICHMOND","Latitude83":"37.45093","LocationAddress":"5401 JEFFERSON DAVIS HWY","Longitude83":"-77.43415","RegistryId":"110000868918","CountyName":"CHESTERFIELD","FacilityName":"DUPONT SPRUANCE PLANT","ZipCode":"23234-2257","SupplementalLocation":null,"FIPSCode":"51041","StateAbbr":"VA"}]}
 
@@ -123,7 +123,7 @@ Now, we see that
 
 >length(value.parseJson().Results.FRSFacility)
 
-Yields
+Yields:
 
 >2
 
@@ -135,7 +135,7 @@ Let's try to get at one specific item in this payload
 
 >value.parseJson().Results.FRSFacility
 
-shows the two FRSFacility items, we want the first one.  It's as simple as
+shows the two FRSFacility items, we want the first one.  It's as simple as specifying
 
 >value.parseJson().Results.FRSFacility[0]
 
