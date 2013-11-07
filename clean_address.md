@@ -1,6 +1,12 @@
 ## Cleaning Addresses in OpenRefine
 
-This is an experiment, to look at how addresses can be cleaned using OpenRefine.  Note that I am not saying "standardized" as that would mean adherence to a standard, such as the US postal standard.  This isn't as sophisticated as that - I'm basically looking to match addresses across disparate datasets.  I have tens of thousands of records to go through, and this may happen on a recurring basis, so I want an easy way to do it...  so enter OpenRefine to help do part of the heavy lift.
+This is an experiment, to look at how addresses can be cleaned using OpenRefine. 
+
+A more robust method might be to use a geocoding web service, which provides a match return, run on the two sets of addresses that you are trying to match.  However, that may be time consuming if you have a lot of service calls to make.
+
+This approach might help shorten that.
+
+Note that I am not saying "standardized" as that would mean adherence to a standard, such as the US postal standard.  This isn't as sophisticated as that - I'm basically looking to match addresses across disparate datasets.  I have tens of thousands of records to go through, and this may happen on a recurring basis, so I want an easy way to do it...  so enter OpenRefine to help do part of the heavy lift.
 
 ***Turn to upper case***
 
@@ -93,7 +99,7 @@ Next, you can compare data between columns:
 
 This just saved me from manually looking through thousands of records
 
-As a future thing, I will try and look at more sophisticated methods for comparing, and for parsing and actually standardizing, but that's a bit beyond my scope and timeframe for getting things done on my current project.
+As a future thing, I may try and look at more sophisticated methods for comparing, for example fuzzy matches using metaphones or other approaches - involving parsing and detecting specific address components and actually standardizing, but that's a bit beyond my scope and timeframe for getting things done on my current project.
 
 
 
