@@ -5,7 +5,7 @@ Calling REST services and parsing JSON with OpenRefine
 
 This is part of what will hopefully become a budding collection of tips, tidbits and recipes on effective use of [OpenRefine](http://openrefine.org/), formerly known as Google Refine.  It's mainly my scrapbook and collection of things learned while working with the tool.
 
-**Retrieving JSON with OpenRefine**
+**Calling Web Services and Retrieving JSON with OpenRefine**
 
 This is a very powerful capability, useful for retrieving data from a REST service for augmenting datasets.
 
