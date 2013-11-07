@@ -25,7 +25,9 @@ In OpenRefine, it will do all of the service calls before populating and refresh
 
 ***JSON***
 
-If the REST service supports it, JSON is a useful output format to pull for OpenRefine, as OpenRefine has some excellent capabilities for parsing JSON.  Here is where I had to learn more via trial and error.
+JSON is ["JavaScript Object Notation"](http://www.json.org/) - originally developed for being easy to work with from JavaScript but it's actually a very versatile little format, usable for many other types of applications as well, similar to XML but generally easier to work with on the web.  
+
+If the REST service you are calling supports it, JSON is a very useful output format to pull for OpenRefine, as OpenRefine has some excellent capabilities for parsing JSON.  Here is where I had to learn more via trial and error.
 
 Suppose the REST service returns a response like this:
 >{
