@@ -62,9 +62,9 @@ will turn the JSON (value) into an object that OpenRefine can manipulate canonic
 
 >{"Results":{"FRSFacility":[{"CityName":"RICHMOND","Latitude83":"37.45093","LocationAddress":"5401 JEFFERSON DAVIS HWY","Longitude83":"-77.43415","RegistryId":"110000868918","CountyName":"CHESTERFIELD","FacilityName":"DUPONT SPRUANCE PLANT","ZipCode":"23234-2257","SupplementalLocation":null,"FIPSCode":"51041","StateAbbr":"VA"}]}}
 
-No real surprise, thus far.
+No real surprise, thus far.  But...  what did doing that just do?
 
-Let's go a level deeper.
+Let's go a level deeper.  What parseJson() did is make all of the items inside the JSON payload super easy to access, as will be demonstrated:
 
 >value.parseJson().Results
 
